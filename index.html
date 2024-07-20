@@ -1,0 +1,66 @@
+<html><head>
+    <title>java script</title>
+
+    <style>
+        #a {
+            border: 5px solid white;
+            padding: 40px 50px;
+            width: 150px;
+        }
+
+        input[type="submit"] {
+            border-radius: 5px;
+            width: 80px;
+        }
+    </style>
+
+</head>
+
+
+<body bgcolor="#2C2C2C" style="color:white;">
+    <center>
+        <h2 onclick="document.querySelectorAll('.f').forEach(function(element) {element.style.color = 'white'; } )"> JS</h2>
+
+        <div>
+            <div id="a">
+                <form action="input.php" method="post">
+                    <label class="f" id="nl" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" onclick="document.getElementById('nl').style.color='white'"><br><br>
+
+                    <label class="f" id="ls" for="sex">Sex:</label>
+                    <input type="text" id="sex" name="sex" onclick="clickjs('#ls')"><br><br>
+
+                    <label class="f" id="la" for="age">Age:</label>
+                    <input type="number" id="age" name="age" onclick="clickjs('#la')"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </center>
+
+
+    <script>
+
+        console.log(2);
+        console.error("Error");
+        console.warn("Warning");
+
+        s=document.querySelector("#a");
+        console.log(s);
+        s.style.background="black";
+        s.style.color="rgb(255, 213, 0)";
+
+        function clickjs(a){
+            s=document.querySelector(a);
+            s.style.color="white";
+        }
+
+        a.addEventListener("click", function(){console.log("c");})
+        a.addEventListener("mouseover", function(){console.log("toutch");})
+
+
+    </script>
+
+
+</body></html>
